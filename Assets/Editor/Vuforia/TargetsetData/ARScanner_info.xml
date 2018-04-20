@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_config.xsd">
+  <TargetSet version="5.0" toolVersion="4.2.0">
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-04-20 12:25:32" name="orca_share_media1524224351983" targetId="246e7e85e7514778b0d9c199b0eb7f42" version="2.0" />
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-04-20 12:27:55" name="orca_share_media1524224322417" targetId="efa9bb0a3119466fb7ec134f0f6a6fd3" version="2.0" />
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-04-20 12:30:08" name="orca_share_media1524224298913" targetId="99a503bc98f2438d9f19c855e13f5253" version="2.0" />
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-04-20 12:33:25" name="orca_share_media1524224263319" targetId="2439b5246ee8440e86391ed67560a367" version="2.0" />
+  </TargetSet>
+</QCARInfo>
