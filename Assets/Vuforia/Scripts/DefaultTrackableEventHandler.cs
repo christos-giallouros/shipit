@@ -73,6 +73,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
+		SpeechBubble bubble = GetComponent<SpeechBubble>();
+		bubble.enabled = true;
+
         // Enable rendering:
         foreach (var component in rendererComponents)
             component.enabled = true;
@@ -92,6 +95,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+
+		SpeechBubble bubble = GetComponent<SpeechBubble>();
+		bubble.enabled = false;
 
         // Disable rendering:
         foreach (var component in rendererComponents)

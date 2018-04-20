@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 747539745}
   - component: {fileID: 747539744}
   - component: {fileID: 747539743}
+  - component: {fileID: 747539746}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -431,6 +432,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 747539741}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &747539746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747539741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33d3792b226cfb4193966ecbb1d2a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubbleWidth: 300
+  bubbleHeight: 150
+  offsetX: 0
+  offsetY: 150
+  mat: {fileID: 2100000, guid: 1abc99d22cf9f7d438b8409badc85668, type: 2}
+  guiSkin: {fileID: 11400000, guid: 9f33556ed15707342b6b9407570ebf8e, type: 2}
+  bubbleText: Motherboeard
 --- !u!1 &862803322
 GameObject:
   m_ObjectHideFlags: 0
