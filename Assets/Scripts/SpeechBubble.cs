@@ -12,9 +12,9 @@ public class SpeechBubble : MonoBehaviour
 	private Vector3 goViewportPos;
 	
 	//the width of the speech bubble
-	public int bubbleWidth = 300;
+	public int bubbleWidth = 1000;
 	//the height of the speech bubble
-	public int bubbleHeight = 150;
+	public int bubbleHeight = 500;
 	
 	//an offset, to better position the bubble 
 	public float offsetX = 0;
@@ -81,10 +81,10 @@ public class SpeechBubble : MonoBehaviour
 		GUI.BeginGroup(new Rect(goScreenPos.x-centerOffsetX-offsetX,Screen.height-goScreenPos.y-centerOffsetY-offsetY,bubbleWidth,bubbleHeight));
 			
 			//Render the round part of the bubble
-			GUI.Label(new Rect(0,0,200,100),"",guiSkin.customStyles[0]);
+		GUI.Label(new Rect(0,0,bubbleWidth,bubbleHeight),"",guiSkin.customStyles[0]);
 			
 			//Render the text
-		GUI.Label(new Rect(10,25,190,50),bubbleText,guiSkin.label);
+		GUI.Label(new Rect(0,0,bubbleWidth,bubbleHeight),bubbleText,guiSkin.label);
 		
 		GUI.EndGroup();
 	}
