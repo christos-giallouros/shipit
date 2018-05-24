@@ -14,6 +14,9 @@ public class startScanner : MonoBehaviour {
 	//void Update () {
 		
 	//}
+
+	public int i=0;
+
 	public void StartScanner() 
 	{
 		SceneManager.LoadScene("main");

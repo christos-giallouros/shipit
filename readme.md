@@ -15,8 +15,11 @@ Additional features have been suggested to gamify the experience, such as a time
 ## REFERENCES
 
 Repo - https://github.com/christos-giallouros/shipit/tree/master/Assets
+
 Unity Game Engine - https://unity3d.com
+
 Vuforia - https://www.vuforia.com
+
 Vuforia Object Scanner - https://library.vuforia.com/articles/Training/Vuforia-Object-Scanner-Users-Guide
 
 

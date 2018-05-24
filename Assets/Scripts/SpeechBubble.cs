@@ -77,6 +77,10 @@ public class SpeechBubble : MonoBehaviour
 	//Draw GUIs
 	void OnGUI()
 	{
+		startScanner ss = new startScanner ();
+		ss.i = 1;
+		bubbleText = bubbleText + ss.i;
+
 		//Begin the GUI group centering the speech bubble at the same position of this game object. After that, apply the offset
 		GUI.BeginGroup(new Rect(goScreenPos.x-centerOffsetX-offsetX,Screen.height-goScreenPos.y-centerOffsetY-offsetY,bubbleWidth,bubbleHeight));
 			
@@ -87,6 +91,9 @@ public class SpeechBubble : MonoBehaviour
 		GUI.Label(new Rect(0,0,bubbleWidth,bubbleHeight),bubbleText,guiSkin.label);
 		
 		GUI.EndGroup();
+
+	
+
 	}
 	
 	//Called after camera has finished rendering the scene
