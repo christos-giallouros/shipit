@@ -153,17 +153,17 @@ MonoBehaviour:
   m_Script: {fileID: -780924145, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: orca_share_media1524224351983
+  mTrackableName: Motherboard
   mPreserveChildSize: 0
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/ARScanner_OT.xml
+  mDataSetPath: Vuforia/Scanner_OT.xml
   mExtendedTracking: 0
   mAspectRatioXY: 1
   mAspectRatioXZ: 1
   mShowBoundingBox: 1
   mBBoxMin: {x: 0, y: 0, z: 0}
   mBBoxMax: {x: 0.1, y: 0.1, z: 0.1}
-  mPreviewImage: {fileID: 2800000, guid: 1a859ea466fa47beba5fcf30927a4623, type: 3}
+  mPreviewImage: {fileID: 2800000, guid: f20ea3450ec54dfc95211cfa9b443289, type: 3}
   mLength: 0.1
   mWidth: 0.1
   mHeight: 0.1
@@ -197,7 +197,7 @@ MonoBehaviour:
   offsetY: 500
   mat: {fileID: 2100000, guid: 1abc99d22cf9f7d438b8409badc85668, type: 2}
   guiSkin: {fileID: 11400000, guid: 9f33556ed15707342b6b9407570ebf8e, type: 2}
-  bubbleText: Motherboard
+  bubbleText: Motherboard111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 --- !u!1 &276639623
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,17 +238,17 @@ MonoBehaviour:
   m_Script: {fileID: -780924145, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: orca_share_media1524224322417
+  mTrackableName: CPU
   mPreserveChildSize: 0
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/ARScanner_OT.xml
+  mDataSetPath: Vuforia/Scanner_OT.xml
   mExtendedTracking: 0
   mAspectRatioXY: 1
   mAspectRatioXZ: 1
   mShowBoundingBox: 1
   mBBoxMin: {x: 0, y: 0, z: 0}
   mBBoxMax: {x: 0.1, y: 0.1, z: 0.1}
-  mPreviewImage: {fileID: 2800000, guid: 485362724aae494eaa6f412fbd139c71, type: 3}
+  mPreviewImage: {fileID: 2800000, guid: 180915ba94de4de6b9e35599eb9698c0, type: 3}
   mLength: 0.1
   mWidth: 0.1
   mHeight: 0.1
@@ -282,7 +282,7 @@ MonoBehaviour:
   offsetY: 400
   mat: {fileID: 2100000, guid: 1abc99d22cf9f7d438b8409badc85668, type: 2}
   guiSkin: {fileID: 11400000, guid: 9f33556ed15707342b6b9407570ebf8e, type: 2}
-  bubbleText: CPU
+  bubbleText: CPU111111111111111111111111111111111111111111111111111111111111111111111111
 --- !u!1 &564832385
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,17 +434,17 @@ MonoBehaviour:
   m_Script: {fileID: -780924145, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: orca_share_media1524224298913
+  mTrackableName: RAM
   mPreserveChildSize: 0
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/ARScanner_OT.xml
+  mDataSetPath: Vuforia/Scanner_OT.xml
   mExtendedTracking: 0
   mAspectRatioXY: 1
   mAspectRatioXZ: 1
   mShowBoundingBox: 1
   mBBoxMin: {x: 0, y: 0, z: 0}
   mBBoxMax: {x: 0.1, y: 0.1, z: 0.1}
-  mPreviewImage: {fileID: 2800000, guid: 7c26bd4ccd914008a4f79838f926bed0, type: 3}
+  mPreviewImage: {fileID: 2800000, guid: 70ee8f7346494a169c9a1425c7078c8f, type: 3}
   mLength: 0.1
   mWidth: 0.1
   mHeight: 0.1
@@ -478,7 +478,7 @@ MonoBehaviour:
   offsetY: 400
   mat: {fileID: 2100000, guid: 1abc99d22cf9f7d438b8409badc85668, type: 2}
   guiSkin: {fileID: 11400000, guid: 9f33556ed15707342b6b9407570ebf8e, type: 2}
-  bubbleText: RAM
+  bubbleText: RAM111111111111111111111111111111111111111111111111111111111111111111111111
 --- !u!1 &2125476324
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,17 +519,17 @@ MonoBehaviour:
   m_Script: {fileID: -780924145, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: orca_share_media1524224263319
+  mTrackableName: Fan
   mPreserveChildSize: 0
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/ARScanner_OT.xml
+  mDataSetPath: Vuforia/Scanner_OT.xml
   mExtendedTracking: 0
   mAspectRatioXY: 1
   mAspectRatioXZ: 1
   mShowBoundingBox: 1
   mBBoxMin: {x: 0, y: 0, z: 0}
   mBBoxMax: {x: 0.1, y: 0.1, z: 0.1}
-  mPreviewImage: {fileID: 2800000, guid: d19ce6c5dd3e4a4db6491b6069bde195, type: 3}
+  mPreviewImage: {fileID: 2800000, guid: 8185755132274d329e574b0ac281cbcd, type: 3}
   mLength: 0.1
   mWidth: 0.1
   mHeight: 0.1
@@ -563,7 +563,7 @@ MonoBehaviour:
   offsetY: 500
   mat: {fileID: 2100000, guid: 1abc99d22cf9f7d438b8409badc85668, type: 2}
   guiSkin: {fileID: 11400000, guid: 9f33556ed15707342b6b9407570ebf8e, type: 2}
-  bubbleText: Fan
+  bubbleText: Fan111111111111111111111111111111111111111111111111111111111111111111111111
 --- !u!1 &2131870932
 GameObject:
   m_ObjectHideFlags: 0

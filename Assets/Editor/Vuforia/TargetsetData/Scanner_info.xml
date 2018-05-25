@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_config.xsd">
+  <TargetSet version="5.0" toolVersion="4.2.0">
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-04-20 10:24:52" name="Heatsink" targetId="d1d6aefa50a04051a97db8f74f0f43ef" version="2.0" />
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-04-20 10:28:44" name="Motherboard" targetId="c5cf5eb315d84d97a2f5f7b887bf75ac" version="2.0" />
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-04-20 10:20:13" name="Fan" targetId="a2a05ec5514540b5a940bb45b68950b1" version="2.0" />
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-04-20 10:15:12" name="RAM" targetId="1a7c0eab71a242c4baa3eca867097330" version="2.0" />
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-04-20 10:11:32" name="CPU" targetId="c7588f32f92d4d74bb5d4b9f065a3d84" version="2.0" />
+  </TargetSet>
+</QCARInfo>
