@@ -44,9 +44,11 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-    - Scanner
+    - ARScanner
+    - ARScanner_OT
     dataSetsToActivate:
-    - Scanner
+    - ARScanner_OT
+    - ARScanner
   videoBackground:
     clippingMode: 0
     numDivisions: 2
