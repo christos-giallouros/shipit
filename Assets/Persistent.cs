@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Persistent : MonoBehaviour {
 
@@ -13,5 +14,10 @@ public class Persistent : MonoBehaviour {
 			DontDestroyOnLoad(this.gameObject);
 			created = true;
 		}
+		else {
+			// This returns the GameObject named Hand.
+        	GameObject god = GameObject.Find("GOD");
+		}
 	}
+ 
 }
