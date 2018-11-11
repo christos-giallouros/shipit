@@ -28,9 +28,16 @@ public class GodScript : MonoBehaviour {
 
 	}
 
-	void Start() {
-	}
+	void Start()
+    {
+    	//fireworksGameObject.Stop();
+    	//explosionsGameObject.Stop();
+    }
 
+ 	void Explode( ParticleSystem exp ) {
+        exp.Play();
+    }
+	
 	// Update is called once per frame
 	void Update () {
 
