@@ -28,28 +28,24 @@ public class GodScript : MonoBehaviour {
 
 	}
 
-	void Start()
-    {
-    	fireworksGameObject.Stop();
-    	explosionsGameObject.Stop();
-    }
+	void Start() {
+	}
 
- 	void Explode( ParticleSystem exp ) {
-        exp.Play();
-    }
-	
 	// Update is called once per frame
 	void Update () {
 
 		if (!AllFound()){
 			timeElapsed += Time.deltaTime;
+		} else if (!fireworksGameObject.isPlaying || !explosionsGameObject.isPlaying) {
+			fireworksGameObject.Play(true);
+			explosionsGameObject.Play(true);
+			Debug.Log("was not playing, is playing now");
 		} else {
-			fireworksGameObject.Play();
+			Debug.Log("was playing");
+			
 		}
 
         TimeSpan time = TimeSpan.FromSeconds(Mathf.RoundToInt(timeElapsed));
         timeText.text = ("TIME: " + time.ToString());
-        Debug.Log( "TIME: " + time.ToString()); // 00:03:48
-
 	}
 }
