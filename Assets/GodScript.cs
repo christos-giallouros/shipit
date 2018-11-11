@@ -11,12 +11,13 @@ public class GodScript : MonoBehaviour {
 	public DefaultTrackableEventHandler ram;
 	public DefaultTrackableEventHandler fan;
 	public ParticleSystem fireworksGameObject;
-	public ParticleSystem explosionsGameObject;
+	private ParticleSystem fireworksPS;
 	private float timeElapsed = 0.0f;
 	private Canvas canvas;
 	public Text timeText;
-	
 
+	// private bool test;
+	
 	bool AllFound() {
 		List<bool> allFound = new List<bool>{cpu.detected, motherBoard.detected, ram.detected, fan.detected };
 		foreach ( bool det in allFound ) {
@@ -30,8 +31,7 @@ public class GodScript : MonoBehaviour {
 
 	void Start()
     {
-    	//fireworksGameObject.Stop();
-    	//explosionsGameObject.Stop();
+		fireworksPS = fireworksGameObject.GetComponent<ParticleSystem>();
     }
 
  	void Explode( ParticleSystem exp ) {
@@ -40,19 +40,29 @@ public class GodScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (!AllFound()){
+		if (!AllFound()) {
 			timeElapsed += Time.deltaTime;
-		} else if (!fireworksGameObject.isPlaying || !explosionsGameObject.isPlaying) {
+		} else if (!fireworksGameObject.isPlaying) {
 			fireworksGameObject.Play(true);
-			explosionsGameObject.Play(true);
+			StartCoroutine(WaitAndStopFireworks());
 			Debug.Log("was not playing, is playing now");
-		} else {
-			Debug.Log("was playing");
-			
 		}
+
+		// if (!test) {
+		// 	fireworksGameObject.Play();
+		// 	StartCoroutine(WaitAndStopFireworks());
+		// 	Debug.Log("was not playing, is playing now");
+		// 	test = true;
+		// }
 
         TimeSpan time = TimeSpan.FromSeconds(Mathf.RoundToInt(timeElapsed));
         timeText.text = ("TIME: " + time.ToString());
+	}
+
+	IEnumerator WaitAndStopFireworks() {
+		Debug.Log("coro");
+		yield return new WaitForSeconds(5);
+		Debug.Log("stop");
+		fireworksGameObject.Stop(true, ParticleSystemStopBehavior.StopEmitting);
 	}
 }
