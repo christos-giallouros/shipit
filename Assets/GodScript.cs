@@ -10,6 +10,8 @@ public class GodScript : MonoBehaviour {
 	public DefaultTrackableEventHandler motherBoard;
 	public DefaultTrackableEventHandler ram;
 	public DefaultTrackableEventHandler fan;
+	public ParticleSystem fireworksGameObject;
+	public ParticleSystem explosionsGameObject;
 	private float timeElapsed = 0.0f;
 	private Canvas canvas;
 	public Text timeText;
@@ -28,6 +30,8 @@ public class GodScript : MonoBehaviour {
 
 	void Start()
     {
+    	fireworksGameObject.Stop();
+    	explosionsGameObject.Stop();
     }
 
  	void Explode( ParticleSystem exp ) {
@@ -40,8 +44,7 @@ public class GodScript : MonoBehaviour {
 		if (!AllFound()){
 			timeElapsed += Time.deltaTime;
 		} else {
-		 	 ParticleSystem fireworksGameObject;
-			 ParticleSystem explosionsGameObject;
+			fireworksGameObject.Play();
 		}
 
         TimeSpan time = TimeSpan.FromSeconds(Mathf.RoundToInt(timeElapsed));
