@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="build_motherboard" size="0.100000 0.139013" />
     <ImageTarget name="Motherboard" size="0.100000 0.139013" />
     <ImageTarget name="RAM" size="0.100000 0.139013" />
     <ImageTarget name="Fan" size="0.100000 0.139013" />
