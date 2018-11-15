@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class ButtonScript : MonoBehaviour {
 
-	public float targetX;
-	public float targetY;
-	public float targetZ;
+	public GameObject motherboard;
+
+	private float targetX;
+	private float targetY;
+	private float targetZ;
 
 	private float speed = 40;
 	private Vector3 targetPosition;
@@ -17,7 +19,7 @@ public class ButtonScript : MonoBehaviour {
 		// hide object
 		gameObject.GetComponent<Renderer>().enabled = false;
 		// set target position
-		targetPosition = new Vector3 (targetX, targetY, targetZ);
+		targetPosition = motherboard.transform.position;
 	}
 
 	// Update is called once per frame
