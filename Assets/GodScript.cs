@@ -16,8 +16,10 @@ public class GodScript : MonoBehaviour {
 	private Canvas canvas;
 	public Text timeText;
 
-	// private bool test;
+	private bool test;
+	private bool particleHasPlayed = false;
 	
+
 	bool AllFound() {
 		List<bool> allFound = new List<bool>{cpu.detected, motherBoard.detected, ram.detected, fan.detected };
 		foreach ( bool det in allFound ) {
@@ -42,10 +44,11 @@ public class GodScript : MonoBehaviour {
 	void Update () {
 		if (!AllFound()) {
 			timeElapsed += Time.deltaTime;
-		} else if (!fireworksGameObject.isPlaying) {
+		} else if (!particleHasPlayed && !fireworksGameObject.isPlaying) {
 			fireworksGameObject.Play(true);
 			StartCoroutine(WaitAndStopFireworks());
 			Debug.Log("was not playing, is playing now");
+			particleHasPlayed = true;
 		}
 
 		// if (!test) {
@@ -63,6 +66,9 @@ public class GodScript : MonoBehaviour {
 		Debug.Log("coro");
 		yield return new WaitForSeconds(5);
 		Debug.Log("stop");
-		fireworksGameObject.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+		fireworksGameObject.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+		if (fireworksGameObject.isStopped) {
+			Debug.Log("STOPPED");
+		}
 	}
 }
