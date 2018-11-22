@@ -6251,10 +6251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e2e3e7efe734108adac2550ce57dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cpu: {fileID: 166674636}
-  motherBoard: {fileID: 1165823283}
-  ram: {fileID: 50880056}
-  fan: {fileID: 416200846}
+  cpu: {fileID: 276639624}
+  motherBoard: {fileID: 194286536}
+  ram: {fileID: 862803323}
+  fan: {fileID: 2125476325}
   fireworksGameObject: {fileID: 956994418}
   timeText: {fileID: 2071764976}
 --- !u!4 &499473963
