@@ -381,8 +381,8 @@ MonoBehaviour:
   m_Script: {fileID: -1826476478, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mWorldCenterMode: 2
-  mWorldCenter: {fileID: 0}
+  mWorldCenterMode: 0
+  mWorldCenter: {fileID: 2119358615}
 --- !u!81 &70808860
 AudioListener:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ Camera:
   m_GameObject: {fileID: 70808857}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -412,7 +412,7 @@ Camera:
     height: 1
   near clip plane: 0.05
   far clip plane: 2000
-  field of view: 60
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: 1
@@ -437,7 +437,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 70808857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 160, z: -660}
+  m_LocalPosition: {x: 0, y: 0, z: -999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1065,6 +1065,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motherboard: {fileID: 180056923}
+  adjustmentX: 0
+  adjustmentY: 0
+  adjustmentZ: 0
 --- !u!1 &456308071
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,15 +2450,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a680efe5661494ebaa0f862b8fe90c2c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.03
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a680efe5661494ebaa0f862b8fe90c2c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.03
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a680efe5661494ebaa0f862b8fe90c2c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.03
+      value: 0.025
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a680efe5661494ebaa0f862b8fe90c2c, type: 3}
@@ -2887,6 +2890,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motherboard: {fileID: 180056923}
+  adjustmentX: -75
+  adjustmentY: 5
+  adjustmentZ: -5
 --- !u!1 &2101368264
 GameObject:
   m_ObjectHideFlags: 0
